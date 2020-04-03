@@ -1,3 +1,5 @@
+@import "variables";
+
 //******** FOOTER ********//
 footer {
   color: $white;
@@ -35,6 +37,7 @@ footer {
 
 .ou-footer__list {
   margin-top: 1.875rem;
+  list-style: none;
   li {
     padding-bottom: 1rem;
   }
