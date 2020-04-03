@@ -131,7 +131,7 @@
   padding-bottom: 1.25rem;
   &::before {
     content: "";
-    background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1302838/ucla-blue-ylw-molecule.svg");
+    background-image: url("/images/branding/ucla-blue-ylw-molecule.svg");
     background-size: contain;
     background-repeat: no-repeat;
     height: 40px;
@@ -203,10 +203,10 @@
   background-repeat: no-repeat;
   min-height: 132px;
   &--initiatives {
-    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1302838/openucla-label_acmi.svg);
+    background-image: url("/images/labels/openucla-label_acmi.svg");
   }
   &--oa-portals {
-    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1302838/openucla-label_picturing-ucla.svg);
+    background-image: url("/images/labels/openucla-label_picturing-ucla.svg");
   }
 }
 

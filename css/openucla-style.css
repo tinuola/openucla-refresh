@@ -126,7 +126,7 @@ body {
   .ou-nav__logos {
     width: 125px; } }
 .ou-header {
-  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1302838/openucla-ucla-library-royce-hall-book-projection.jpg");
+  background-image: url("/images/events/openucla-ucla-library-royce-hall-book-projection.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -235,7 +235,7 @@ body {
   padding-bottom: 1.25rem; }
   .ou-intro__list--item::before {
     content: "";
-    background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1302838/ucla-blue-ylw-molecule.svg");
+    background-image: url("/images/branding/ucla-blue-ylw-molecule.svg");
     background-size: contain;
     background-repeat: no-repeat;
     height: 40px;
@@ -281,9 +281,9 @@ body {
   background-repeat: no-repeat;
   min-height: 132px; }
   .ou-item__header--initiatives {
-    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1302838/openucla-label_acmi.svg); }
+    background-image: url("/images/labels/openucla-label_acmi.svg"); }
   .ou-item__header--oa-portals {
-    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1302838/openucla-label_picturing-ucla.svg); }
+    background-image: url("/images/labels/openucla-label_picturing-ucla.svg"); }
 
 .ou-item__text {
   font-size: 1rem;
