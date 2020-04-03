@@ -8,6 +8,7 @@
 html {
   scroll-behavior: smooth; }
 
+/* ******** Resets ********/
 h1,
 h2,
 h3,
@@ -19,6 +20,7 @@ ul {
   margin: 0;
   padding: 0; }
 
+/* ******** Typography ********/
 body {
   color: #333333;
   font-family: "Helvetica"; }
@@ -72,6 +74,7 @@ body {
       color: #ffffff;
       border-bottom: solid 2px #ffffff; }
 
+/* ******** Layout ********/
 .ou-container {
   margin: 0 auto;
   width: calc(100vw - 40px);
@@ -114,6 +117,7 @@ body {
   flex-wrap: wrap;
   padding-top: 2rem; }
 
+/********* NAV ********/
 .ou-nav {
   display: flex;
   justify-content: space-between;
@@ -125,6 +129,7 @@ body {
 @media (min-width: 768px) {
   .ou-nav__logos {
     width: 125px; } }
+/********* HEADER ********/
 .ou-header {
   background-image: url("/images/events/openucla-ucla-library-royce-hall-book-projection.jpg");
   background-size: cover;
@@ -154,6 +159,7 @@ body {
   margin-top: 1rem;
   margin-bottom: 4rem; }
 
+/********* WHAT IS OPENUCLA ********/
 @media (min-width: 992px) {
   .ou-intro {
     display: flex;
@@ -260,6 +266,8 @@ body {
 .ou-intro__list--item:nth-last-child(1) {
   padding-bottom: 0; }
 
+/********* INITIATIVES ********/
+/********* OPEN ACCESS PORTAL ********/
 .ou-items-container {
   justify-content: space-between;
   padding-top: 1rem; }
@@ -302,6 +310,7 @@ body {
   .ou-item__link:hover {
     color: #003b5c; }
 
+/********* EVENTS ********/
 .ou-event__wrapper {
   flex: 0 0 100%;
   display: flex;
@@ -380,6 +389,7 @@ body {
 @media (min-width: 992px) {
   .ou-event__past {
     padding-left: 1.25rem; } }
+/********* NEWS & UPDATES ********/
 .ou-news-container {
   justify-content: space-between; }
 
@@ -417,6 +427,7 @@ body {
   text-decoration: underline;
   border-bottom: 0; }
 
+/********* MEDIA EXPERTS ********/
 .ou-media-bio-container {
   justify-content: space-between; }
 
@@ -475,6 +486,7 @@ body {
 @media (min-width: 576px) {
   .bio-title {
     font-size: 1rem; } }
+/********* FOOTER ********/
 footer {
   color: #ffffff;
   font-size: 13px;
