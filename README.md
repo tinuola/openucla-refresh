@@ -3,7 +3,11 @@
 Repo to track code for OpenUCLA refresh project.
 
 Markup and Styling for:
-Landing page
+
+OpenUCLA landing page
+
 FAQs page
-News & Update page
-Past Event page
+
+News & Updates page
+
+Past Centennial Events page

@@ -1,6 +1,6 @@
 @import "variables";
 
-//******** FOOTER ********//
+// FOOTER ********//
 footer {
   color: $white;
   font-size: 13px;
@@ -12,6 +12,7 @@ footer {
   padding-top: 2.5rem;
   padding-bottom: 1.5rem;
 }
+
 @media (min-width: 900px) {
   .ou-footer__primary {
     display: flex;
@@ -28,6 +29,7 @@ footer {
   line-height: 2.5;
   margin-top: 1.5rem;
 }
+
 @media (min-width: 900px) {
   .ou-footer__text {
     flex-basis: 45%;
@@ -42,6 +44,7 @@ footer {
     padding-bottom: 1rem;
   }
 }
+
 @media (min-width: 900px) {
   .ou-footer__list {
     flex-basis: 25%;

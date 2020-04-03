@@ -12,7 +12,7 @@ html {
   scroll-behavior: smooth;
 }
 
-//******** Resets ********//
+// Resets ********//
 h1,
 h2,
 h3,
@@ -25,7 +25,7 @@ ul {
   padding: 0;
 }
 
-//******** Typography ********//
+// Typography ********//
 body {
   color: $text-black;
   font-family: "Helvetica";
@@ -40,16 +40,19 @@ body {
   border-bottom: 1px solid $ucla-lightest-blue;
   padding-bottom: 0.75rem;
 }
+
 @media (min-width: 375px) {
   .ou-subheading {
     font-size: 1.5rem;
   }
 }
+
 @media (min-width: 768px) {
   .ou-subheading {
     font-size: 1.75rem;
   }
 }
+
 @media (min-width: 992px) {
   .ou-subheading {
     font-size: 2rem;
@@ -61,6 +64,7 @@ body {
   line-height: 1.5;
   padding-top: 1rem;
 }
+
 @media (min-width: 992px) {
   .ou-lead {
     font-size: 1.5rem;
@@ -96,7 +100,7 @@ body {
   }
 }
 
-//******** Layout ********//
+// Layout ********//
 .ou-container {
   margin: 0 auto;
   width: calc(100vw - 40px);
@@ -105,11 +109,13 @@ body {
     background: $white;
   }
 }
+
 @media (min-width: 768px) {
   .ou-container {
     width: calc(100vw - 60px);
   }
 }
+
 @media (min-width: 992px) {
   .ou-container {
     width: calc(100vw - 80px);
@@ -125,6 +131,7 @@ body {
 .ou-media-bio {
   padding: 1.5rem 0;
 }
+
 @media (min-width: 768px) {
   .ou-intro,
   .ou-initiatives,
@@ -135,6 +142,7 @@ body {
     padding: 2.5rem 0;
   }
 }
+
 @media (min-width: 992px) {
   .ou-intro,
   .ou-initiatives,

@@ -1,6 +1,6 @@
 @import "variables";
 
-//******** NAV ********//
+// NAV ********//
 .ou-nav {
   display: flex;
   justify-content: space-between;
@@ -10,6 +10,7 @@
     width: 100px;
   }
 }
+
 @media (min-width: 768px) {
   .ou-nav {
     &__logos {
