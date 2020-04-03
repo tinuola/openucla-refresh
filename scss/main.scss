@@ -1,0 +1,450 @@
+.ou-content {
+  margin-top: 1rem;
+  margin-bottom: 4rem;
+}
+
+//******** WHAT IS OPENUCLA ********//
+.ou-intro {
+}
+@media (min-width: 992px) {
+  .ou-intro {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.ou-intro__wrapper--lead {
+  padding: 1rem 0 4rem 0;
+}
+@media (min-width: 992px) {
+  .ou-intro__wrapper--lead {
+    flex: 0 0 55%;
+    align-self: center;
+    order: 2;
+    padding: 0 4rem 0 2rem;
+  }
+}
+
+.ou-intro__lead--text {
+  font-size: 1.125rem;
+  line-height: 1.5;
+}
+@media (min-width: 375px) {
+  .ou-intro__lead--text {
+    font-size: 1.25rem;
+  }
+}
+@media (min-width: 768px) {
+  .ou-intro__lead--text {
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 1200px) {
+  .ou-intro__lead--text {
+    font-size: 1.75rem;
+  }
+}
+
+.ou-intro__lead--link {
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  line-height: 1.25;
+  padding-top: 2.5rem;
+}
+@media (min-width: 375px) {
+  .ou-intro__lead--link {
+    font-size: 1.125rem;
+  }
+}
+@media (min-width: 768px) {
+  .ou-intro__lead--link {
+    font-size: 1.25rem;
+  }
+}
+@media (min-width: 992px) {
+  .ou-intro__lead--link {
+    font-size: 1.375rem;
+  }
+}
+
+.ou-intro__wrapper--list {
+  background: $ucla-darker-blue;
+  margin-bottom: 3.125rem;
+}
+@media (min-width: 992px) {
+  .ou-intro__wrapper--list {
+    flex: 0 0 35%;
+    min-width: 475px;
+    height: 400px;
+    max-height: 450px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    order: 1;
+  }
+}
+
+.ou-intro__list {
+  padding: 2rem 0 2rem 0.75rem;
+}
+@media (min-width: 375px) {
+  .ou-intro__list {
+    padding-left: 1rem;
+  }
+}
+@media (min-width: 400px) {
+  .ou-intro__list {
+    padding-left: 1.5rem;
+  }
+}
+@media (min-width: 576px) {
+  .ou-intro__list {
+    padding-left: 2.5rem;
+  }
+}
+
+.ou-intro__list--item {
+  font-size: 1.125rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  line-height: 1.25;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding-bottom: 1.25rem;
+  &::before {
+    content: "";
+    background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1302838/ucla-blue-ylw-molecule.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 40px;
+    width: 40px;
+    margin-right: 0.5rem;
+    transform: rotate(45deg);
+  }
+}
+@media (min-width: 375px) {
+  .ou-intro__list--item {
+    font-size: 1.25rem;
+  }
+}
+@media (min-width: 400px) {
+  .ou-intro__list--item {
+    letter-spacing: 1px;
+    &::before {
+      margin-right: 1rem;
+    }
+  }
+}
+@media (min-width: 576px) {
+  .ou-intro__list--item {
+    letter-spacing: 2px;
+  }
+}
+@media (min-width: 768px) {
+  .ou-intro__list--item {
+    font-size: 1.5rem;
+  }
+}
+
+.ou-intro__list--item:nth-last-child(1) {
+  padding-bottom: 0;
+}
+
+//******** INITIATIVES ********//
+//******** OPEN ACCESS PORTAL ********//
+.ou-items-container {
+  justify-content: space-between;
+  padding-top: 1rem;
+}
+
+.ou-item__wrapper {
+  flex: 0 0 100%;
+  padding: 1rem 0;
+  border-bottom: 1px solid #c3d7ee;
+}
+@media (min-width: 576px) {
+  .ou-item__wrapper {
+    flex: 0 0 48%;
+  }
+}
+@media (min-width: 992px) {
+  .ou-item__wrapper {
+    flex: 0 0 32%;
+  }
+}
+
+.ou-item__header {
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 132px;
+  &--initiatives {
+    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1302838/openucla-label_acmi.svg);
+  }
+  &--oa-portals {
+    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1302838/openucla-label_picturing-ucla.svg);
+  }
+}
+
+.ou-item__text {
+  font-size: 1rem;
+  line-height: 1.5;
+  padding: 1rem 0 3rem 0;
+}
+@media (min-width: 992px) {
+  .ou-item__text {
+    font-size: 1.125rem;
+  }
+}
+
+.ou-item__link {
+  color: $ucla-darker-blue;
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  &:hover {
+    color: $ucla-darkest-blue;
+  }
+}
+
+//******** EVENTS ********//
+.ou-events-container {
+}
+
+.ou-event__wrapper {
+  flex: 0 0 100%;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid $ucla-lightest-blue;
+  margin-bottom: 1rem;
+
+  &:nth-last-child(1) {
+    align-self: center;
+    margin-top: 1.5rem;
+    border-bottom: 0;
+  }
+}
+@media (min-width: 768px) {
+  .ou-event__wrapper {
+    flex: 0 0 48%;
+    margin-bottom: 2rem;
+    &:nth-child(even) {
+      margin-left: 1rem;
+    }
+    &:nth-last-child(1) {
+      margin-top: 0;
+    }
+  }
+}
+@media (min-width: 992px) {
+  .ou-event__wrapper {
+    flex: 0 0 32%;
+    margin-bottom: 2rem;
+    &:nth-child(even) {
+      margin-left: 0;
+    }
+    &:nth-child(3n-1) {
+      margin-right: 1rem;
+      margin-left: 1rem;
+    }
+  }
+}
+
+.ou-event__image-wrapper {
+  img {
+    width: 100%;
+  }
+}
+.ou-event__image {
+  height: auto;
+  max-width: 100%;
+}
+
+.ou-event__body {
+  display: flex;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+@media (min-width: 768px) {
+  .ou-event__body {
+    padding-left: 2rem;
+    padding-right: 1rem;
+  }
+}
+.ou-event__date {
+  border-right: 6px solid $ucla-gold;
+  padding-right: 1.25rem;
+}
+
+.ou-event__month {
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.ou-event__day {
+  font-size: 1.875rem;
+  font-weight: 100;
+  line-height: 1;
+}
+
+.ou-event__desc {
+  font-size: 0.875rem;
+  line-height: 1.25;
+  padding-left: 1.25rem;
+}
+@media (min-width: 768px) {
+  .ou-event__desc {
+    font-size: 1rem;
+  }
+}
+
+.ou-event__past {
+  &--link {
+    color: $text-black;
+    font-size: 0.875rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-decoration: underline;
+    &:hover {
+      color: $ucla-darkest-blue;
+    }
+  }
+}
+@media (min-width: 992px) {
+  .ou-event__past {
+    padding-left: 1.25rem;
+  }
+}
+
+//******** NEWS & UPDATES ********//
+.ou-news-container {
+  justify-content: space-between;
+}
+
+.ou-news__link {
+  color: $text-black;
+  flex: 0 0 100%;
+  font-size: 1rem;
+  line-height: 1.25;
+  text-decoration: none;
+  border-bottom: 1px solid $ucla-lightest-blue;
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
+  &:nth-last-child(1) {
+  }
+  &:hover {
+    color: $ucla-darkest-blue;
+    text-decoration: underline;
+  }
+}
+@media (min-width: 768px) {
+  .ou-news__link {
+    flex: 0 0 48%;
+    &:nth-child(even) {
+      margin-left: 1.25rem;
+    }
+  }
+}
+@media (min-width: 992px) {
+  .ou-news__link {
+    flex: 0 0 31%;
+    &:nth-child(even) {
+      margin-left: 0;
+    }
+    &:nth-child(3n-1) {
+      margin-left: 1.25rem;
+      margin-right: 1.25rem;
+    }
+  }
+}
+
+.ou-news__link--more {
+  color: $text-black;
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-decoration: underline;
+  border-bottom: 0;
+}
+
+//******** MEDIA EXPERTS ********//
+.ou-media-bio-container {
+  justify-content: space-between;
+}
+
+.bio-card-wrapper,
+.bio-label-wrapper {
+  flex: 0 0 100%;
+  border-bottom: 1px solid $ucla-lightest-blue;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  color: $text-black;
+  text-decoration: none;
+  opacity: 0.95;
+  &:hover {
+    color: $text-black;
+    text-decoration: none;
+    opacity: 1;
+  }
+}
+
+@media (min-width: 768px) {
+  .bio-card-wrapper,
+  .bio-label-wrapper {
+    flex: 0 0 48%;
+  }
+}
+@media (min-width: 992px) {
+  .bio-card-wrapper,
+  .bio-label-wrapper {
+    flex: 0 0 31%;
+    margin-bottom: 2.5rem;
+  }
+}
+
+.bio-card-wrapper {
+  display: flex;
+}
+
+.bio-img-wrapper {
+  flex-basis: 40%;
+  img {
+    width: 100%;
+  }
+}
+.bio-img {
+  height: auto;
+  max-width: 100%;
+}
+
+.bio-text-wrapper {
+  flex-basis: 60%;
+  padding-left: 1.5rem;
+}
+
+.bio-name {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+@media (min-width: 576px) {
+  .bio-name {
+    font-size: 1.5rem;
+  }
+}
+
+.bio-title {
+  font-size: 0.875rem;
+  line-height: 1.25;
+}
+@media (min-width: 576px) {
+  .bio-title {
+    font-size: 1rem;
+  }
+}

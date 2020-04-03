@@ -1,2 +1,9 @@
 # openucla-refresh
-Repo to track markup and styling work for OpenUCLA refresh project
+
+Repo to track code for OpenUCLA refresh project.
+
+Markup and Styling for:
+Landing page
+FAQs page
+News & Update page
+Past Event page

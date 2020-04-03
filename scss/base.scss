@@ -1,0 +1,151 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+//******** Resets ********//
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+//******** Typography ********//
+body {
+  color: $text-black;
+  font-family: "Helvetica";
+}
+
+.ou-subheading {
+  color: $ucla-darker-blue;
+  font-size: 1.25rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-bottom: 1px solid $ucla-lightest-blue;
+  padding-bottom: 0.75rem;
+}
+@media (min-width: 375px) {
+  .ou-subheading {
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 768px) {
+  .ou-subheading {
+    font-size: 1.75rem;
+  }
+}
+@media (min-width: 992px) {
+  .ou-subheading {
+    font-size: 2rem;
+  }
+}
+
+.ou-lead {
+  font-size: 1.25rem;
+  line-height: 1.5;
+  padding-top: 1rem;
+}
+@media (min-width: 992px) {
+  .ou-lead {
+    font-size: 1.5rem;
+    padding-top: 2rem;
+  }
+}
+
+.anime-link {
+  text-decoration: none;
+  border-bottom: solid 0px transparent;
+  -webkit-transition: border-bottom-color 0.2s ease-in;
+  -moz-transition: border-bottom-color 0.2s ease-in;
+  -ms-transition: border-bottom-color 0.2s ease-in;
+  -o-transition: border-bottom-color 0.2s ease-in;
+  transition: border-bottom-color 0.2s ease-in;
+  &:hover {
+    text-decoration: none;
+    margin-bottom: -2px;
+  }
+  &--blue {
+    color: $ucla-darker-blue;
+    &:hover {
+      color: $ucla-darkest-blue;
+      border-bottom: solid 2px $ucla-darkest-blue;
+    }
+  }
+  &--white {
+    color: $white;
+    &:hover {
+      color: $white;
+      border-bottom: solid 2px $white;
+    }
+  }
+}
+
+//******** Layout ********//
+.ou-container {
+  margin: 0 auto;
+  width: calc(100vw - 40px);
+  max-width: 1920px;
+  &--white {
+    background: $white;
+  }
+}
+@media (min-width: 768px) {
+  .ou-container {
+    width: calc(100vw - 60px);
+  }
+}
+@media (min-width: 992px) {
+  .ou-container {
+    width: calc(100vw - 80px);
+  }
+}
+
+// Sections
+.ou-intro,
+.ou-initiatives,
+.ou-events,
+.ou-portals,
+.ou-news,
+.ou-media-bio {
+  padding: 1.5rem 0;
+}
+@media (min-width: 768px) {
+  .ou-intro,
+  .ou-initiatives,
+  .ou-events,
+  .ou-portals,
+  .ou-news,
+  .ou-media-bio {
+    padding: 2.5rem 0;
+  }
+}
+@media (min-width: 992px) {
+  .ou-intro,
+  .ou-initiatives,
+  .ou-events,
+  .ou-portals,
+  .ou-news,
+  .ou-media-bio {
+    padding: 4rem 0;
+  }
+}
+
+.ou-inner-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 2rem;
+}

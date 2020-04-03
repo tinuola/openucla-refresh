@@ -1,0 +1,17 @@
+//******** NAV ********//
+.ou-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 1rem 0;
+  &__logos {
+    width: 100px;
+  }
+}
+@media (min-width: 768px) {
+  .ou-nav {
+    &__logos {
+      width: 125px;
+    }
+  }
+}
