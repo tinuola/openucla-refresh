@@ -2,12 +2,18 @@
 
 /********* HEADER ********/
 .ou-header {
-  background-image: url("/images/events/openucla-ucla-library-royce-hall-book-projection.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
   height: 500px;
   position: relative;
+  &--main {
+    background-image: url("/images/headers/openucla-ucla-library-royce-hall-book-projection.jpg");
+  }
+  &--faqs {
+    background-image: url("/images/headers/openucla-faqs-header-img.jpg");
+    background-position: left;
+  }
 }
 
 .ou-header-label {
