@@ -141,6 +141,9 @@ body {
   .ou-header--faqs {
     background-image: url("/images/headers/openucla-faqs-header-img.jpg");
     background-position: left; }
+  .ou-header--news {
+    background-image: url("/images/headers/openucla-news-header-img.jpg");
+    background-position: left; }
 
 .ou-header-label {
   background: #ffffff;
@@ -493,18 +496,19 @@ body {
   margin-bottom: 2rem; }
   .ou-subpage-item--heading {
     font-size: 20px;
-    letter-spacing: 0.5px;
-    margin-bottom: 2rem; }
+    letter-spacing: 0.5px; }
   .ou-subpage-item--text {
     font-size: 14px;
     letter-spacing: 0.5px;
     line-height: 1.5;
-    margin-bottom: 1rem; }
+    margin-top: 1rem; }
     .ou-subpage-item--text span {
       font-weight: 600; }
   .ou-subpage-item--link {
     color: #005587;
     font-weight: 600; }
+    .ou-subpage-item--link:hover {
+      color: #003b5c; }
   .ou-subpage-item--list {
     list-style: circle inside;
     margin-bottom: 1rem; }
@@ -520,8 +524,6 @@ body {
 @media (min-width: 400px) {
   .ou-subpage-item {
     padding: 30px; }
-    .ou-subpage-item--heading {
-      font-size: 22px; }
     .ou-subpage-item--text {
       font-size: 16px; } }
 @media (min-width: 768px) {
