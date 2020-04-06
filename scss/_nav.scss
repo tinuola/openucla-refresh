@@ -9,6 +9,23 @@
   &__logos {
     width: 100px;
   }
+  &__links {
+    display: flex;
+    justify-content: space-around;
+  }
+  &__link-item {
+    list-style: none;
+    margin-left: 1.25rem;
+    a {
+      color: $ucla-blue;
+      font-weight: 600;
+      text-decoration: none;
+      &:hover {
+        color: $ucla-darkest-blue;
+        text-decoration: underline;
+      }
+    }
+  }
 }
 
 @media (min-width: 768px) {

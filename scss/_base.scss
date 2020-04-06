@@ -84,13 +84,6 @@ body {
     text-decoration: none;
     margin-bottom: -2px;
   }
-  &--blue {
-    color: $ucla-darker-blue;
-    &:hover {
-      color: $ucla-darkest-blue;
-      border-bottom: solid 2px $ucla-darkest-blue;
-    }
-  }
   &--white {
     color: $white;
     &:hover {

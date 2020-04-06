@@ -63,11 +63,6 @@ body {
   .anime-link:hover {
     text-decoration: none;
     margin-bottom: -2px; }
-  .anime-link--blue {
-    color: #005587; }
-    .anime-link--blue:hover {
-      color: #003b5c;
-      border-bottom: solid 2px #003b5c; }
   .anime-link--white {
     color: #ffffff; }
     .anime-link--white:hover {
@@ -125,6 +120,19 @@ body {
   padding: 1rem 0; }
   .ou-nav__logos {
     width: 100px; }
+  .ou-nav__links {
+    display: flex;
+    justify-content: space-around; }
+  .ou-nav__link-item {
+    list-style: none;
+    margin-left: 1.25rem; }
+    .ou-nav__link-item a {
+      color: #2774ae;
+      font-weight: 600;
+      text-decoration: none; }
+      .ou-nav__link-item a:hover {
+        color: #003b5c;
+        text-decoration: underline; }
 
 @media (min-width: 768px) {
   .ou-nav__logos {
@@ -194,12 +202,17 @@ body {
   .ou-intro__lead--text {
     font-size: 1.75rem; } }
 .ou-intro__lead--link {
+  color: #005587;
   display: inline-block;
   font-size: 1rem;
   font-weight: 600;
   letter-spacing: 1px;
   line-height: 1.25;
-  padding-top: 2.5rem; }
+  padding-top: 2.5rem;
+  text-decoration: none; }
+  .ou-intro__lead--link:hover {
+    color: #003b5c;
+    text-decoration: underline; }
 
 @media (min-width: 375px) {
   .ou-intro__lead--link {

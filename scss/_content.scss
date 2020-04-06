@@ -56,12 +56,18 @@
 }
 
 .ou-intro__lead--link {
+  color: $ucla-darker-blue;
   display: inline-block;
   font-size: 1rem;
   font-weight: 600;
   letter-spacing: 1px;
   line-height: 1.25;
   padding-top: 2.5rem;
+  text-decoration: none;
+  &:hover {
+    color: $ucla-darkest-blue;
+    text-decoration: underline;
+  }
 }
 
 @media (min-width: 375px) {
