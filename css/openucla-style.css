@@ -566,13 +566,13 @@ body {
 /********* SUBPAGES ********/
 .ou-subpage-item {
   background-color: rgba(195, 215, 238, 0.4);
-  padding: 20px;
+  padding: 1.25rem;
   margin-bottom: 2rem; }
   .ou-subpage-item--heading {
-    font-size: 20px;
+    font-size: 1.25rem;
     letter-spacing: 0.5px; }
   .ou-subpage-item--text {
-    font-size: 14px;
+    font-size: 0.875rem;
     letter-spacing: 0.5px;
     line-height: 1.5;
     margin-top: 1rem; }
@@ -587,26 +587,26 @@ body {
     list-style: circle inside;
     margin-bottom: 1rem; }
     .ou-subpage-item--list li {
-      font-size: 18px;
+      font-size: 1.125rem;
       line-height: 1.5; }
   .ou-subpage-item--footnote {
     color: #666666;
-    font-size: 14px;
+    font-size: 0.875rem;
     font-style: italic;
     margin-top: 2rem; }
 
 @media (min-width: 400px) {
   .ou-subpage-item {
-    padding: 30px; }
+    padding: 1.875rem; }
     .ou-subpage-item--text {
-      font-size: 16px; } }
+      font-size: 1rem; } }
 @media (min-width: 768px) {
   .ou-subpage-item {
-    padding: 40px 60px; }
+    padding: 2.5rem 3.75rem; }
     .ou-subpage-item--heading {
-      font-size: 24px; }
+      font-size: 1.5rem; }
     .ou-subpage-item--text {
-      font-size: 18px; } }
+      font-size: 1.125rem; } }
 .ou-subpage-event-wrapper {
   flex: 0 0 100%;
   margin-bottom: 2rem; }
@@ -632,10 +632,10 @@ body {
 .ou-subpage-event__body {
   margin-top: 1rem; }
 .ou-subpage-event--title {
-  font-size: 18px; }
+  font-size: 1.125rem; }
 .ou-subpage-event--date {
   color: #666666;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-style: italic;
   margin-top: 0.25rem; }
 .ou-subpage-event--desc {

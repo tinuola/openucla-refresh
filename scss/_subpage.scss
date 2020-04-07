@@ -4,14 +4,14 @@
 
 .ou-subpage-item {
   background-color: rgba($ucla-lightest-blue, 0.4);
-  padding: 20px;
+  padding: 1.25rem;
   margin-bottom: 2rem;
   &--heading {
-    font-size: 20px;
+    font-size: 1.25rem;
     letter-spacing: 0.5px;
   }
   &--text {
-    font-size: 14px;
+    font-size: 0.875rem;
     letter-spacing: 0.5px;
     line-height: 1.5;
     margin-top: 1rem;
@@ -30,13 +30,13 @@
     list-style: circle inside;
     margin-bottom: 1rem;
     li {
-      font-size: 18px;
+      font-size: 1.125rem;
       line-height: 1.5;
     }
   }
   &--footnote {
     color: $light-gray;
-    font-size: 14px;
+    font-size: 0.875rem;
     font-style: italic;
     margin-top: 2rem;
   }
@@ -44,21 +44,21 @@
 
 @media (min-width: 400px) {
   .ou-subpage-item {
-    padding: 30px;
+    padding: 1.875rem;
     &--text {
-      font-size: 16px;
+      font-size: 1rem;
     }
   }
 }
 
 @media (min-width: 768px) {
   .ou-subpage-item {
-    padding: 40px 60px;
+    padding: 2.5rem 3.75rem;
     &--heading {
-      font-size: 24px;
+      font-size: 1.5rem;
     }
     &--text {
-      font-size: 18px;
+      font-size: 1.125rem;
     }
   }
 }
@@ -103,11 +103,11 @@
     margin-top: 1rem;
   }
   &--title {
-    font-size: 18px;
+    font-size: 1.125rem;
   }
   &--date {
     color: $light-gray;
-    font-size: 14px;
+    font-size: 0.875rem;
     font-style: italic;
     margin-top: 0.25rem;
   }
