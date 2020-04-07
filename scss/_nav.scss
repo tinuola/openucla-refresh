@@ -5,33 +5,108 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  min-height: 7vh;
   padding: 1rem 0;
   &__logos {
-    width: 100px;
+    width: 125px;
+    vertical-align: bottom;
   }
-  &__links {
-    display: flex;
-    justify-content: space-around;
+}
+
+.ou-nav__links {
+  display: flex;
+  justify-content: space-around;
+}
+
+@media (max-width: 899px) {
+  body {
+    overflow-x: hidden;
   }
-  &__link-item {
-    list-style: none;
-    margin-left: 1.25rem;
-    a {
-      color: $ucla-blue;
-      font-weight: 600;
-      text-decoration: none;
-      &:hover {
-        color: $ucla-darkest-blue;
-        text-decoration: underline;
-      }
+}
+
+@media (max-width: 899px) {
+  .ou-nav__links {
+    position: absolute;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    top: 7vh;
+    background-color: $white;
+    display: none;
+    padding: 1rem 0 0.75rem 0;
+    width: 100%;
+  }
+}
+
+.ou-nav__link-item {
+  list-style: none;
+  margin-left: 1.25rem;
+  a {
+    color: $ucla-blue;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+    &:hover {
+      color: $ucla-darkest-blue;
+      text-decoration: underline;
     }
   }
 }
 
-@media (min-width: 768px) {
-  .ou-nav {
-    &__logos {
-      width: 125px;
-    }
+@media (max-width: 899px) {
+  .ou-nav__link-item {
+    padding: 0.5rem 0;
+  }
+}
+
+.ou-nav__icon {
+  display: none;
+}
+
+@media (max-width: 899px) {
+  .ou-nav__icon {
+    display: block;
+    cursor: pointer;
+    width: 23px;
+  }
+}
+
+.nav-active {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  -webkit-animation: navslide 0.4s ease-out;
+  -moz-animation: navslide 0.4s ease-out;
+  animation: navslide 0.4s ease-out;
+}
+@-webkit-keyframes navslide {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(1100%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+  }
+}
+@-moz-keyframes navslide {
+  0% {
+    opacity: 0;
+    -moz-transform: translateX(100%);
+  }
+  100% {
+    opacity: 1;
+    -moz-transform: translateX(0);
+  }
+}
+@keyframes navslide {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
   }
 }
