@@ -27,8 +27,8 @@
 @media (max-width: 899px) {
   .ou-nav__links {
     position: absolute;
-    right: 0px;
-    left: 0px;
+    right: 0;
+    left: 0;
     z-index: 1;
     top: 7vh;
     background-color: $white;
@@ -68,13 +68,7 @@
   .ou-nav__icon {
     display: block;
     cursor: pointer;
-  }
-  .ou-nav__icon > div {
-    width: 25px;
-    height: 2px;
-    background-color: $ucla-blue;
-    margin: 5px;
-    transition: all 0.3s ease;
+    width: 23px;
   }
 }
 
