@@ -1,0 +1,165 @@
+// Blocks in the Open Access Portals, Events, and Initiatives sections
+
+.ou-item__wrapper {
+  flex: 0 0 100%;
+  padding: 1rem 0;
+  border-bottom: 1px solid #c3d7ee;
+}
+
+@media (min-width: 576px) {
+  .ou-item__wrapper {
+    flex: 0 0 48%;
+    &:nth-child(even) {
+      margin-left: 1rem;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .ou-item__wrapper {
+    flex: 0 0 32%;
+    &:nth-child(even) {
+      margin-left: 0;
+    }
+    &:nth-child(3n-1) {
+      margin-right: 1rem;
+      margin-left: 1rem;
+    }
+  }
+}
+
+.ou-item__wrapper--event {
+  flex-direction: column;
+  &:nth-last-child(1) {
+    align-self: center;
+    border-bottom: 0;
+  }
+}
+
+@media (min-width: 576px) {
+  .ou-item__wrapper--event {
+    flex: 0 0 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .ou-item__wrapper--event {
+    flex: 0 0 48%;
+    margin-bottom: 2rem;
+    &:nth-child(even) {
+      margin-left: 1rem;
+    }
+    &:nth-last-child(1) {
+      margin-top: 0;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .ou-item__wrapper--event {
+    flex: 0 0 32%;
+    margin-bottom: 2rem;
+    &:nth-child(even) {
+      margin-left: 0;
+    }
+    &:nth-child(3n-1) {
+      margin-right: 1rem;
+      margin-left: 1rem;
+    }
+  }
+}
+
+.ou-item__image-wrapper {
+  img {
+    width: 100%;
+  }
+}
+
+.ou-item__image {
+  height: auto;
+  max-width: 100%;
+}
+
+.ou-item__text {
+  font-size: 1rem;
+  line-height: 1.5;
+  padding: 1rem 0 3rem 0;
+}
+
+@media (min-width: 992px) {
+  .ou-item__text {
+    font-size: 1.125rem;
+  }
+}
+
+.ou-item__link {
+  color: $ucla-darker-blue;
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  &:hover {
+    color: $ucla-darkest-blue;
+  }
+}
+
+.ou-event__body {
+  display: flex;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+@media (min-width: 768px) {
+  .ou-event__body {
+    padding-left: 2rem;
+    padding-right: 1rem;
+  }
+}
+
+.ou-event__date {
+  border-right: 6px solid $ucla-gold;
+  padding-right: 1.25rem;
+}
+
+.ou-event__month {
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.ou-event__day {
+  font-size: 1.875rem;
+  font-weight: 100;
+  line-height: 1;
+}
+
+.ou-event__desc {
+  font-size: 0.875rem;
+  line-height: 1.25;
+  padding-left: 1.25rem;
+}
+
+@media (min-width: 768px) {
+  .ou-event__desc {
+    font-size: 1rem;
+  }
+}
+
+.ou-event__past {
+  &--link {
+    color: $text-black;
+    font-size: 0.875rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-decoration: underline;
+    &:hover {
+      color: $ucla-darkest-blue;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .ou-event__past {
+    padding-left: 1.25rem;
+  }
+}

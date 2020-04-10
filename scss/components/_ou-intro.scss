@@ -1,0 +1,170 @@
+/********* WHAT IS OPENUCLA ********/
+
+@media (min-width: 992px) {
+  .ou-intro {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.ou-intro__wrapper--lead {
+  padding: 1rem 0 4rem 0;
+}
+
+@media (min-width: 992px) {
+  .ou-intro__wrapper--lead {
+    flex: 0 0 55%;
+    align-self: center;
+    order: 2;
+    padding: 0 4rem 0 2rem;
+  }
+}
+
+.ou-intro__lead--text {
+  font-size: 1.125rem;
+  line-height: 1.5;
+}
+
+@media (min-width: 375px) {
+  .ou-intro__lead--text {
+    font-size: 1.25rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .ou-intro__lead--text {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .ou-intro__lead--text {
+    font-size: 1.75rem;
+  }
+}
+
+.ou-intro__lead--link {
+  color: $ucla-darker-blue;
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  line-height: 1.25;
+  padding-top: 2.5rem;
+  text-decoration: none;
+  &:hover {
+    color: $ucla-darkest-blue;
+    text-decoration: underline;
+  }
+}
+
+@media (min-width: 375px) {
+  .ou-intro__lead--link {
+    font-size: 1.125rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .ou-intro__lead--link {
+    font-size: 1.25rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .ou-intro__lead--link {
+    font-size: 1.375rem;
+  }
+}
+
+.ou-intro__wrapper--list {
+  background: $ucla-darker-blue;
+  margin-bottom: 3.125rem;
+}
+
+@media (min-width: 992px) {
+  .ou-intro__wrapper--list {
+    flex: 0 0 35%;
+    min-width: 475px;
+    height: 400px;
+    max-height: 450px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    order: 1;
+  }
+}
+
+.ou-intro__list {
+  padding: 2rem 0 2rem 0.75rem;
+}
+
+@media (min-width: 375px) {
+  .ou-intro__list {
+    padding-left: 1rem;
+  }
+}
+
+@media (min-width: 400px) {
+  .ou-intro__list {
+    padding-left: 1.5rem;
+  }
+}
+
+@media (min-width: 576px) {
+  .ou-intro__list {
+    padding-left: 2.5rem;
+  }
+}
+
+.ou-intro__list--item {
+  font-size: 1.125rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  line-height: 1.25;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding-bottom: 1.25rem;
+  &::before {
+    content: "";
+    background-image: url("/images/branding/ucla-blue-ylw-molecule.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 40px;
+    width: 40px;
+    margin-right: 0.5rem;
+    transform: rotate(45deg);
+  }
+}
+
+@media (min-width: 375px) {
+  .ou-intro__list--item {
+    font-size: 1.25rem;
+  }
+}
+
+@media (min-width: 400px) {
+  .ou-intro__list--item {
+    letter-spacing: 1px;
+    &::before {
+      margin-right: 1rem;
+    }
+  }
+}
+
+@media (min-width: 576px) {
+  .ou-intro__list--item {
+    letter-spacing: 2px;
+  }
+}
+
+@media (min-width: 768px) {
+  .ou-intro__list--item {
+    font-size: 1.5rem;
+  }
+}
+
+.ou-intro__list--item:nth-last-child(1) {
+  padding-bottom: 0;
+}

@@ -1,0 +1,67 @@
+/* ******** Layout ********/
+
+.ou-container {
+  margin: 0 auto;
+  width: calc(100vw - 40px);
+  max-width: 1920px;
+  &--white {
+    background: $white;
+  }
+}
+
+@media (min-width: 768px) {
+  .ou-container {
+    width: calc(100vw - 60px);
+  }
+}
+
+@media (min-width: 992px) {
+  .ou-container {
+    width: calc(100vw - 80px);
+  }
+}
+
+.ou-content {
+  margin-top: 1rem;
+  margin-bottom: 4rem;
+  &--subpage {
+    margin-top: 4rem;
+  }
+}
+
+.ou-intro,
+.ou-initiatives,
+.ou-events,
+.ou-portals,
+.ou-news,
+.ou-media-bio {
+  padding: 1.5rem 0;
+}
+
+@media (min-width: 768px) {
+  .ou-intro,
+  .ou-initiatives,
+  .ou-events,
+  .ou-portals,
+  .ou-news,
+  .ou-media-bio {
+    padding: 2.5rem 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .ou-intro,
+  .ou-initiatives,
+  .ou-events,
+  .ou-portals,
+  .ou-news,
+  .ou-media-bio {
+    padding: 4rem 0;
+  }
+}
+
+.ou-inner-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 2rem;
+}
