@@ -51,12 +51,20 @@ body {
   .ou-lead--event {
     padding-top: 0;
     padding-bottom: 1rem; }
+  .ou-lead--experts {
+    font-size: 1.125rem;
+    padding-bottom: 1.5rem; }
+    .ou-lead--experts span {
+      font-weight: 600; }
 
 @media (min-width: 992px) {
   .ou-lead {
     font-size: 1.5rem; }
     .ou-lead--event {
-      padding-bottom: 1.5rem; } }
+      padding-bottom: 1.5rem; }
+    .ou-lead--experts {
+      font-size: 1.125rem;
+      padding-bottom: 2rem; } }
 .anime-link {
   text-decoration: none;
   border-bottom: solid 0px transparent;
@@ -572,6 +580,11 @@ body {
   font-size: 1.25rem;
   font-weight: 600;
   margin-bottom: 0.5rem; }
+
+.bio-desc {
+  font-size: 0.875rem;
+  font-style: italic;
+  margin-top: 1rem; }
 
 @media (min-width: 576px) {
   .bio-name {
