@@ -8,7 +8,7 @@
     <script defer src="js/responsive-nav.js"></script>
   </head>
   <body>
-    <div class="ou-container ou-container--white">
+    <div class="ou-body-container ou-body-container--white">
       <nav class="ou-nav">
         <a href="https://www.library.ucla.edu/">
           <img src="/images/logos/ucla-library-logo-blue_resized.svg" alt="UCLA Library Logo" class="ou-nav__logos" />
@@ -24,12 +24,6 @@
         </ul>
 
         <img src="/images/logos/menu-icon.svg" alt="Site menu icon" class="ou-nav__icon" />
-
-        <!-- <div class="ou-nav__icon">
-          <div class="line1"></div>
-          <div class="line2"></div>
-          <div class="line3"></div>
-        </div> -->
       </nav>
 
       <header class="ou-header ou-header--main">
@@ -39,9 +33,9 @@
         </div>
       </header>
 
-      <main class="ou-content">
+      <main class="ou-main-container ou-main-container--home">
         <!-- WHAT IS OPENUCLA? -->
-        <section class="ou-intro">
+        <section class="ou-section ou-section--intro">
           <div class="ou-intro__wrapper--lead">
             <p class="ou-intro__lead--text">
               OpenUCLA seeks to create a better future by removing barriers to research and scholarship. We commit to
@@ -72,13 +66,13 @@
         </section>
 
         <!-- OPEN ACCESS PORTALS -->
-        <section class="ou-portals" id="portals" role="heading" aria-level="2">
+        <section class="ou-section" id="portals" role="heading" aria-level="2">
           <h2 class="ou-subheading">Open Access Portals</h2>
           <p class="ou-lead">
             Visit some of the UCLA Library's most robust - and growing - open access repositories, from campus images,
             to global ephemera to peer-reviewed publications.
           </p>
-          <div class="ou-inner-container">
+          <div class="ou-flex-container">
             <div class="ou-item__wrapper">
               <div class="ou-item__image-wrapper">
                 <img
@@ -186,9 +180,9 @@
         </section>
 
         <!-- EVENTS -->
-        <section class="ou-events" id="events" role="heading" aria-level="2">
+        <section class="ou-section" id="events" role="heading" aria-level="2">
           <h2 class="ou-subheading">Events</h2>
-          <div class="ou-inner-container">
+          <div class="ou-flex-container">
             <div class="ou-item__wrapper ou-item__wrapper--event">
               <div class="ou-item__image-wrapper">
                 <img src="images/events/openucla-kickoff.jpg" alt="" class="ou-item__image" />
@@ -254,10 +248,10 @@
         </section>
 
         <!-- INITIATIVES -->
-        <section class="ou-initiatives" id="initiatives" role="heading" aria-level="2">
+        <section class="ou-section" id="initiatives" role="heading" aria-level="2">
           <h2 class="ou-subheading">Initiatives</h2>
           <p class="ou-lead">OpenUCLA impacts the entire Bruin scholarly community and beyond.</p>
-          <div class="ou-inner-container">
+          <div class="ou-flex-container">
             <div class="ou-item__wrapper">
               <div class="ou-item__image-wrapper">
                 <img
@@ -333,9 +327,9 @@
         </section>
 
         <!-- NEWS & UPDATES -->
-        <section class="ou-news" id="news" role="heading" aria-level="2">
+        <section class="ou-section" id="news" role="heading" aria-level="2">
           <h2 class="ou-subheading">News & Updates</h2>
-          <div class="ou-inner-container">
+          <div class="ou-flex-container ou-flex-container--news">
             <a href="" class="ou-news__link">UC Office of Scholarly Communications - Elsevier Updates</a>
             <a href="" class="ou-news__link"
               >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
@@ -353,10 +347,9 @@
         </section>
 
         <!-- MEDIA EXPERTS -->
-        <section class="ou-media-bio" id="media" role="heading" aria-level="2">
+        <section class="ou-section" id="media" role="heading" aria-level="2">
           <h2 class="ou-subheading">Media Experts</h2>
-          <div class="ou-inner-container ou-media-bio-container">
-            <!-- Media Expert Card-->
+          <div class="ou-flex-container ou-flex-container--experts">
             <a href="https://www.library.ucla.edu/staff/virginia-steel" target="_blank" class="bio-card-wrapper">
               <div class="bio-img-wrapper">
                 <img src="images/experts/ginny-steel.jpg" alt="" class="bio-img" />
@@ -366,7 +359,7 @@
                 <p class="bio-title">Norman and Armena Powell University Librarian</p>
               </div>
             </a>
-            <!-- Media Expert Card-->
+
             <a href="https://www.library.ucla.edu/staff/alison-scott" target="_blank" class="bio-card-wrapper">
               <div class="bio-img-wrapper">
                 <img src="images/experts/alison-scott.jpg" alt="" class="bio-img" />
@@ -376,7 +369,7 @@
                 <p class="bio-title">Associate University Librarian for Collections and Scholarly Communication</p>
               </div>
             </a>
-            <!-- Media Expert Card-->
+
             <a href="" target="_blank" class="bio-card-wrapper">
               <div class="bio-img-wrapper">
                 <img src="https://via.placeholder.com/400x450" alt="" class="bio-img" />
@@ -386,21 +379,21 @@
                 <p class="bio-title">Associate Professor, Family Medicine, David Geffen School of Medicine</p>
               </div>
             </a>
-            <!-- Media Expert Label-->
+
             <a href="https://www.library.ucla.edu/staff/martin-j-brennan" target="_blank" class="bio-label-wrapper">
               <div class="bio-label-text-wrapper">
                 <p class="bio-name">Marty Brennan</p>
                 <p class="bio-title">Scholarly Communication Education Librarian</p>
               </div>
             </a>
-            <!-- Media Expert Label -->
+
             <a href="https://www.library.ucla.edu/staff/jennifer-chan" target="_blank" class="bio-label-wrapper">
               <div class="bio-label-text-wrapper">
                 <p class="bio-name">Jennifer Chan</p>
                 <p class="bio-title">Scholarly Communication Librarian</p>
               </div>
             </a>
-            <!-- Media Expert Label -->
+
             <a href="https://www.library.ucla.edu/staff/matthew-vest" target="_blank" class="bio-label-wrapper">
               <div class="bio-label-text-wrapper">
                 <p class="bio-name">Matthew Vest</p>
@@ -413,7 +406,7 @@
     </div>
 
     <footer class="ou-footer-wrapper__primary">
-      <div class="ou-container">
+      <div class="ou-body-container">
         <div class="ou-footer__primary">
           <a href="https://www.library.ucla.edu/"
             ><img src="/images/logos/ucla-library-logo-wht_resized.svg" alt="UCLA Library Logo" class="ou-footer__logo"
@@ -443,7 +436,7 @@
     </footer>
 
     <footer class="ou-footer-wrapper__secondary">
-      <div class="ou-container">
+      <div class="ou-body-container">
         &copy; 2014–2020 UC Regents, Creative Commons Attribution 4.0
       </div>
     </footer>

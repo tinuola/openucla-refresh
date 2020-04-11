@@ -1,6 +1,6 @@
 /* ******** Layout ********/
 
-.ou-container {
+.ou-body-container {
   margin: 0 auto;
   width: calc(100vw - 40px);
   max-width: 1920px;
@@ -10,58 +10,47 @@
 }
 
 @media (min-width: 768px) {
-  .ou-container {
+  .ou-body-container {
     width: calc(100vw - 60px);
   }
 }
 
 @media (min-width: 992px) {
-  .ou-container {
+  .ou-body-container {
     width: calc(100vw - 80px);
   }
 }
 
-.ou-content {
-  margin-top: 1rem;
+.ou-main-container {
+  margin-top: 4rem;
   margin-bottom: 4rem;
-  &--subpage {
-    margin-top: 4rem;
+  @media (min-width: 992px) {
+    margin-bottom: 6rem;
+    &--home {
+      margin-top: 7rem;
+    }
   }
 }
 
-.ou-intro,
-.ou-initiatives,
-.ou-events,
-.ou-portals,
-.ou-news,
-.ou-media-bio {
-  padding: 1.5rem 0;
-}
-
-@media (min-width: 768px) {
-  .ou-intro,
-  .ou-initiatives,
-  .ou-events,
-  .ou-portals,
-  .ou-news,
-  .ou-media-bio {
-    padding: 2.5rem 0;
-  }
+.ou-section {
+  margin-bottom: 5rem;
 }
 
 @media (min-width: 992px) {
-  .ou-intro,
-  .ou-initiatives,
-  .ou-events,
-  .ou-portals,
-  .ou-news,
-  .ou-media-bio {
-    padding: 4rem 0;
+  .ou-section {
+    margin-bottom: 8rem;
+    &--intro {
+      display: flex;
+      justify-content: space-between;
+    }
   }
 }
 
-.ou-inner-container {
+.ou-flex-container {
   display: flex;
   flex-wrap: wrap;
-  padding-top: 2rem;
+  &--news,
+  &--experts {
+    justify-content: space-between;
+  }
 }

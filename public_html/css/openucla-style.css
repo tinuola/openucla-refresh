@@ -1,3 +1,4 @@
+/******** Colors ********/
 *,
 *::before,
 *::after {
@@ -64,10 +65,17 @@ body {
   padding-top: 1rem;
 }
 
+.ou-lead--event {
+  padding-top: 0;
+  padding-bottom: 1rem;
+}
+
 @media (min-width: 992px) {
   .ou-lead {
     font-size: 1.5rem;
-    padding-top: 2rem;
+  }
+  .ou-lead--event {
+    padding-bottom: 1.5rem;
   }
 }
 
@@ -92,7 +100,7 @@ body {
   border-bottom: solid 2px #ffffff;
 }
 
-/********* NAV ********/
+/* ******** NAV ********/
 .ou-nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -215,7 +223,7 @@ body {
   }
 }
 
-/********* HEADER ********/
+/* ******** HEADER ********/
 .ou-header {
   background-size: cover;
   background-repeat: no-repeat;
@@ -261,75 +269,72 @@ body {
 }
 
 /* ******** Layout ********/
-.ou-container {
+.ou-body-container {
   margin: 0 auto;
   width: calc(100vw - 40px);
   max-width: 1920px;
 }
 
-.ou-container--white {
+.ou-body-container--white {
   background: #ffffff;
 }
 
 @media (min-width: 768px) {
-  .ou-container {
+  .ou-body-container {
     width: calc(100vw - 60px);
   }
 }
 
 @media (min-width: 992px) {
-  .ou-container {
+  .ou-body-container {
     width: calc(100vw - 80px);
   }
 }
 
-.ou-content {
-  margin-top: 1rem;
+.ou-main-container {
+  margin-top: 4rem;
   margin-bottom: 4rem;
 }
 
-.ou-content--subpage {
-  margin-top: 4rem;
-}
-
-.ou-intro,
-.ou-initiatives,
-.ou-events,
-.ou-portals,
-.ou-news,
-.ou-media-bio {
-  padding: 1.5rem 0;
-}
-
-@media (min-width: 768px) {
-  .ou-intro,
-  .ou-initiatives,
-  .ou-events,
-  .ou-portals,
-  .ou-news,
-  .ou-media-bio {
-    padding: 2.5rem 0;
+@media (min-width: 992px) {
+  .ou-main-container {
+    margin-bottom: 6rem;
   }
+  .ou-main-container--home {
+    margin-top: 7rem;
+  }
+}
+
+.ou-section {
+  margin-bottom: 5rem;
 }
 
 @media (min-width: 992px) {
-  .ou-intro,
-  .ou-initiatives,
-  .ou-events,
-  .ou-portals,
-  .ou-news,
-  .ou-media-bio {
-    padding: 4rem 0;
+  .ou-section {
+    margin-bottom: 8rem;
+  }
+  .ou-section--intro {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 
-.ou-inner-container {
+.ou-flex-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding-top: 2rem;
+}
+
+.ou-flex-container--news, .ou-flex-container--experts {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 /********* SUBPAGES ********/
@@ -463,17 +468,6 @@ body {
 }
 
 /********* WHAT IS OPENUCLA ********/
-@media (min-width: 992px) {
-  .ou-intro {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-}
-
 .ou-intro__wrapper--lead {
   padding: 1rem 0 4rem 0;
 }
@@ -657,6 +651,7 @@ body {
   padding-bottom: 0;
 }
 
+/* ******** Shared block items for Open Access Portals, Events and Initiatives */
 .ou-item__wrapper {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 100%;
@@ -686,59 +681,6 @@ body {
     margin-left: 0;
   }
   .ou-item__wrapper:nth-child(3n-1) {
-    margin-right: 1rem;
-    margin-left: 1rem;
-  }
-}
-
-.ou-item__wrapper--event {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.ou-item__wrapper--event:nth-last-child(1) {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  border-bottom: 0;
-}
-
-@media (min-width: 576px) {
-  .ou-item__wrapper--event {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 100%;
-            flex: 0 0 100%;
-  }
-}
-
-@media (min-width: 768px) {
-  .ou-item__wrapper--event {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 48%;
-            flex: 0 0 48%;
-    margin-bottom: 2rem;
-  }
-  .ou-item__wrapper--event:nth-child(even) {
-    margin-left: 1rem;
-  }
-  .ou-item__wrapper--event:nth-last-child(1) {
-    margin-top: 0;
-  }
-}
-
-@media (min-width: 992px) {
-  .ou-item__wrapper--event {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 32%;
-            flex: 0 0 32%;
-    margin-bottom: 2rem;
-  }
-  .ou-item__wrapper--event:nth-child(even) {
-    margin-left: 0;
-  }
-  .ou-item__wrapper--event:nth-child(3n-1) {
     margin-right: 1rem;
     margin-left: 1rem;
   }
@@ -775,6 +717,61 @@ body {
 
 .ou-item__link:hover {
   color: #003b5c;
+}
+
+/* ******** Custom block items for Events */
+.ou-item__wrapper--event {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.ou-item__wrapper--event:nth-last-child(1) {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  border-bottom: 0;
+}
+
+@media (min-width: 576px) {
+  .ou-item__wrapper--event {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .ou-item__wrapper--event {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 48%;
+            flex: 0 0 48%;
+    margin-bottom: 2rem;
+  }
+  .ou-item__wrapper--event:nth-child(even) {
+    margin-left: 1rem;
+  }
+  .ou-item__wrapper--event:nth-last-child(1) {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .ou-item__wrapper--event {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 32%;
+            flex: 0 0 32%;
+    margin-bottom: 2rem;
+  }
+  .ou-item__wrapper--event:nth-child(even) {
+    margin-left: 0;
+  }
+  .ou-item__wrapper--event:nth-child(3n-1) {
+    margin-right: 1rem;
+    margin-left: 1rem;
+  }
 }
 
 .ou-event__body {
@@ -841,20 +838,14 @@ body {
   }
 }
 
-/********* MEDIA EXPERTS ********/
-.ou-media-bio-container {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
+/* ******** MEDIA EXPERTS ********/
 .bio-card-wrapper,
 .bio-label-wrapper {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 100%;
           flex: 0 0 100%;
   border-bottom: 1px solid #c3d7ee;
-  padding-bottom: 1rem;
+  padding: 1rem 0;
   margin-bottom: 1rem;
   color: #333333;
   text-decoration: none;
@@ -936,7 +927,7 @@ body {
   }
 }
 
-/********* NEWS & UPDATES ********/
+/* ******** NEWS & UPDATES *********/
 .ou-news__link {
   color: #333333;
   -webkit-box-flex: 0;
@@ -946,7 +937,7 @@ body {
   line-height: 1.25;
   text-decoration: none;
   border-bottom: 1px solid #c3d7ee;
-  padding-bottom: 1rem;
+  padding: 1rem 0;
   margin-bottom: 2rem;
 }
 
@@ -988,6 +979,8 @@ body {
   letter-spacing: 1px;
   text-decoration: underline;
   border-bottom: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 /********* FOOTER ********/

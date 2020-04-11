@@ -37,12 +37,18 @@ body {
   font-size: 1.25rem;
   line-height: 1.5;
   padding-top: 1rem;
+  &--event {
+    padding-top: 0;
+    padding-bottom: 1rem;
+  }
 }
 
 @media (min-width: 992px) {
   .ou-lead {
     font-size: 1.5rem;
-    padding-top: 2rem;
+    &--event {
+      padding-bottom: 1.5rem;
+    }
   }
 }
 
