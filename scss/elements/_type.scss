@@ -34,30 +34,39 @@ body {
 }
 
 .ou-lead {
-  font-size: 1.25rem;
+  font-size: 1.125rem;
   line-height: 1.5;
   padding-top: 1rem;
+  padding-bottom: 1rem;
   &--event {
     padding-top: 0;
-    padding-bottom: 1rem;
   }
+  &--news,
   &--experts {
-    font-size: 1.125rem;
-    padding-bottom: 1.5rem;
-    span {
+    padding-bottom: 2.5rem;
+    span:nth-child(1) {
       font-weight: 600;
     }
+    span:nth-child(2) {
+      font-style: italic;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .ou-lead {
+    font-size: 1.25rem;
   }
 }
 
 @media (min-width: 992px) {
   .ou-lead {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     &--event {
       padding-bottom: 1.5rem;
     }
+    &--news,
     &--experts {
-      font-size: 1.125rem;
       padding-bottom: 4rem;
     }
   }
