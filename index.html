@@ -8,7 +8,7 @@
     <script defer src="js/responsive-nav.js"></script>
   </head>
   <body>
-    <div class="ou-container ou-container--white">
+    <div class="ou-body-container ou-body-container--white">
       <nav class="ou-nav">
         <a href="https://www.library.ucla.edu/">
           <img src="/images/logos/ucla-library-logo-blue_resized.svg" alt="UCLA Library Logo" class="ou-nav__logos" />
@@ -24,12 +24,6 @@
         </ul>
 
         <img src="/images/logos/menu-icon.svg" alt="Site menu icon" class="ou-nav__icon" />
-
-        <!-- <div class="ou-nav__icon">
-          <div class="line1"></div>
-          <div class="line2"></div>
-          <div class="line3"></div>
-        </div> -->
       </nav>
 
       <header class="ou-header ou-header--main">
@@ -39,9 +33,9 @@
         </div>
       </header>
 
-      <main class="ou-content">
+      <main class="ou-main-container ou-main-container--home">
         <!-- WHAT IS OPENUCLA? -->
-        <section class="ou-intro">
+        <section class="ou-section ou-section--intro">
           <div class="ou-intro__wrapper--lead">
             <p class="ou-intro__lead--text">
               OpenUCLA seeks to create a better future by removing barriers to research and scholarship. We commit to
@@ -53,12 +47,14 @@
           <div class="ou-intro__wrapper--list" role="navigation" aria-label="Page Sections">
             <ul class="ou-intro__list">
               <li class="ou-intro__list--item">
-                <a href="#initiatives" class="anime-link anime-link--white">Initiatives</a>
-              </li>
-              <li class="ou-intro__list--item"><a href="#events" class="anime-link anime-link--white">Events</a></li>
-              <li class="ou-intro__list--item">
                 <a href="#portals" class="anime-link anime-link--white">Open Access Portals</a>
               </li>
+
+              <li class="ou-intro__list--item"><a href="#events" class="anime-link anime-link--white">Events</a></li>
+              <li class="ou-intro__list--item">
+                <a href="#initiatives" class="anime-link anime-link--white">Initiatives</a>
+              </li>
+
               <li class="ou-intro__list--item">
                 <a href="#news" class="anime-link anime-link--white">News & Updates</a>
               </li>
@@ -69,75 +65,127 @@
           </div>
         </section>
 
-        <!-- INITIATIVES -->
-        <section class="ou-initiatives" id="initiatives" role="heading" aria-level="2">
-          <h2 class="ou-subheading">Initiatives</h2>
-          <p class="ou-lead">OpenUCLA impacts the entire Bruin scholarly community and beyond.</p>
-          <div class="ou-inner-container ou-items-container">
-            <!-- Initiative Item -->
+        <!-- OPEN ACCESS PORTALS -->
+        <section class="ou-section" id="portals" role="heading" aria-level="2">
+          <h2 class="ou-subheading">Open Access Portals</h2>
+          <p class="ou-lead">
+            Visit some of the UCLA Library's most robust - and growing - open access repositories, from campus images,
+            to global ephemera to peer-reviewed publications.
+          </p>
+          <div class="ou-flex-container">
             <div class="ou-item__wrapper">
-              <div
-                class="ou-item__header ou-item__header--initiatives"
-                role="img"
-                aria-label="Label for OpenUCLA Affordable Course Materials Initiative (ACMI) Awards"
-              ></div>
+              <div class="ou-item__image-wrapper">
+                <img
+                  src="images/labels/openucla-label_picturing-ucla.svg"
+                  alt="Label - Picturing UCLA"
+                  class="ou-item__image"
+                />
+              </div>
               <p class="ou-item__text">
-                Two UCLA faculty members will receive grants of $5,000 each to develop and release their proposals for
-                Open Educational Resources.
+                Over 10,000 images from the UCLA University Archives Photographic Reference collection, available to
+                download and use with citation.
               </p>
-              <a href="" class="ou-item__link">Learn more about the ACMI Awards</a>
+              <a href="https://picturingucla.library.ucla.edu/" target="_blank" class="ou-item__link"
+                >View the Photographic Archives</a
+              >
             </div>
-            <!-- Initiative Item -->
+
             <div class="ou-item__wrapper">
-              <div
-                class="ou-item__header ou-item__header--initiatives"
-                role="img"
-                aria-label="Label for OpenUCLA Affordable Course Materials Initiative (ACMI) Awards"
-              ></div>
+              <div class="ou-item__image-wrapper">
+                <img
+                  src="/images/labels/openucla-label_openaccess-youtube.svg"
+                  alt="Label - Open Access YouTube Playlist"
+                  class="ou-item__image"
+                />
+              </div>
               <p class="ou-item__text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua.
+                Aggregated video content detailing the open access movement, and how the UCLA Library supports it.
               </p>
-              <a href="" class="ou-item__link">Learn more about Lorem Ipsum</a>
+              <a
+                href="https://www.youtube.com/watch?v=tE6g1yHJmDM&list=PLV8eqWoGXke6wZyXEdG7gUcpOVIpg9xB6"
+                target="_blank"
+                rel="noopener"
+                class="ou-item__link"
+                >Watch Open Access Events</a
+              >
             </div>
-            <!-- Initiative Item -->
+
             <div class="ou-item__wrapper">
-              <div
-                class="ou-item__header ou-item__header--initiatives"
-                role="img"
-                aria-label="Label for OpenUCLA Affordable Course Materials Initiative (ACMI) Awards"
-              ></div>
+              <div class="ou-item__image-wrapper">
+                <img
+                  src="/images/labels/openucla-label_digital-collections.svg"
+                  alt="Label - UCLA Digital Library Collections"
+                  class="ou-item__image"
+                />
+              </div>
               <p class="ou-item__text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam.
+                Explore distinctive and international open access materials from Library holdings.
               </p>
-              <a href="" class="ou-item__link">Learn more about Lorem Ipsum</a>
+              <a href="https://digital.library.ucla.edu/" target="_blank" class="ou-item__link"
+                >Explore the Digital Collection</a
+              >
             </div>
-            <!-- Initiative Item -->
+
             <div class="ou-item__wrapper">
-              <div
-                class="ou-item__header ou-item__header--initiatives"
-                role="img"
-                aria-label="Label for OpenUCLA Affordable Course Materials Initiative (ACMI) Awards"
-              ></div>
+              <div class="ou-item__image-wrapper">
+                <img
+                  src="/images/labels/openucla-label_escholarship.svg"
+                  alt="Label - eScholarship"
+                  class="ou-item__image"
+                />
+              </div>
               <p class="ou-item__text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat.
+                UC-wide open access scholarly publishing and repository services.
               </p>
-              <a href="" class="ou-item__link">Learn more about Lorem Ipsum</a>
+              <a href="https://escholarship.org/uc/ucla" target="_blank" rel="noopener" class="ou-item__link"
+                >Learn More about eScholarship
+              </a>
+            </div>
+
+            <div class="ou-item__wrapper">
+              <div class="ou-item__image-wrapper">
+                <img
+                  src="/images/labels/openucla-label_idep.svg"
+                  alt="Label - International Digital Ephemera Project (IDEP)"
+                  class="ou-item__image"
+                />
+              </div>
+              <p class="ou-item__text">
+                An innovative and forward-looking initiative alongside global partners to capture and preserve
+                collections of knowledge.
+              </p>
+              <a href="https://idep.library.ucla.edu" target="_blank" class="ou-item__link">Learn More about IDEP</a>
+            </div>
+
+            <div class="ou-item__wrapper">
+              <div class="ou-item__image-wrapper">
+                <img
+                  src="/images/labels/openucla-label_tome.svg"
+                  alt="Label - TOME: Toward an Open Monography Ecosystem"
+                  class="ou-item__image"
+                />
+              </div>
+              <p class="ou-item__text">
+                With support from Arcadia, a charitable fund of Lisbet Rausing and Peter Baldwin, the UCLA Library
+                covers the title publication fees for UCLA faculty authors in support of this nationwide initiative.
+              </p>
+              <a
+                href="https://www.library.ucla.edu/open-access-journals-monograph-publishers"
+                target="_blank"
+                class="ou-item__link"
+                >Learn More about TOME</a
+              >
             </div>
           </div>
         </section>
 
         <!-- EVENTS -->
-        <section class="ou-events" id="events" role="heading" aria-level="2">
+        <section class="ou-section" id="events" role="heading" aria-level="2">
           <h2 class="ou-subheading">Events</h2>
-          <div class="ou-inner-container ou-events-container">
-            <!-- Event Item -->
-            <div class="ou-event__wrapper">
-              <div class="ou-event__image-wrapper">
-                <img src="images/events/openucla-kickoff.jpg" alt="" class="ou-event__image" />
+          <div class="ou-flex-container">
+            <div class="ou-item__wrapper ou-item__wrapper--event">
+              <div class="ou-item__image-wrapper">
+                <img src="images/events/openucla-kickoff.jpg" alt="" class="ou-item__image" />
               </div>
               <div class="ou-event__body">
                 <div class="ou-event__date">
@@ -147,10 +195,10 @@
                 <p class="ou-event__desc">Last Fast Ride: The Life, Love, and Death of a Punk Goddess</p>
               </div>
             </div>
-            <!-- Event Item -->
-            <div class="ou-event__wrapper">
-              <div class="ou-event__image-wrapper">
-                <img src="images/events/openucla-kickoff.jpg" alt="" class="ou-event__image" />
+
+            <div class="ou-item__wrapper ou-item__wrapper--event">
+              <div class="ou-item__image-wrapper">
+                <img src="images/events/openucla-kickoff.jpg" alt="" class="ou-item__image" />
               </div>
               <div class="ou-event__body">
                 <div class="ou-event__date">
@@ -162,10 +210,10 @@
                 </p>
               </div>
             </div>
-            <!-- Event Item -->
-            <div class="ou-event__wrapper">
-              <div class="ou-event__image-wrapper">
-                <img src="images/events/openucla-kickoff.jpg" alt="" class="ou-event__image" />
+
+            <div class="ou-item__wrapper ou-item__wrapper--event">
+              <div class="ou-item__image-wrapper">
+                <img src="images/events/openucla-kickoff.jpg" alt="" class="ou-item__image" />
               </div>
               <div class="ou-event__body">
                 <div class="ou-event__date">
@@ -177,10 +225,10 @@
                 </p>
               </div>
             </div>
-            <!-- Event Item -->
-            <div class="ou-event__wrapper">
-              <div class="ou-event__image-wrapper">
-                <img src="images/events/openucla-kickoff.jpg" alt="" class="ou-event__image" />
+
+            <div class="ou-item__wrapper ou-item__wrapper--event">
+              <div class="ou-item__image-wrapper">
+                <img src="images/events/openucla-kickoff.jpg" alt="" class="ou-item__image" />
               </div>
               <div class="ou-event__body">
                 <div class="ou-event__date">
@@ -190,8 +238,8 @@
                 <p class="ou-event__desc">Lorem ipsum dolor sit amet, consectetur</p>
               </div>
             </div>
-            <!-- Event Item - Past -->
-            <div class="ou-event__wrapper">
+
+            <div class="ou-item__wrapper ou-item__wrapper--event">
               <p class="ou-event__past">
                 <a href="/events.html" class="ou-event__past--link">View an Archive of OpenUCLA Centennial Events</a>
               </p>
@@ -199,167 +247,202 @@
           </div>
         </section>
 
-        <!-- OPEN ACCESS PORTALS -->
-        <section class="ou-portals" id="portals" role="heading" aria-level="2">
-          <h2 class="ou-subheading">Open Access Portals</h2>
-          <p class="ou-lead">
-            Visit some of the UCLA Library's most robust - and growing - open access repositories, from campus images,
-            to global ephemera to peer-reviewed publications.
-          </p>
-          <div class="ou-inner-container ou-items-container">
-            <!-- Portal Item -->
+        <!-- INITIATIVES -->
+        <section class="ou-section" id="initiatives" role="heading" aria-level="2">
+          <h2 class="ou-subheading">Initiatives</h2>
+          <p class="ou-lead">OpenUCLA impacts the entire Bruin scholarly community and beyond.</p>
+          <div class="ou-flex-container">
             <div class="ou-item__wrapper">
-              <div
-                class="ou-item__header ou-item__header--oa-portals"
-                role="img"
-                aria-label="Label for Picturing UCLA: The Visual History of UCLA"
-              ></div>
+              <div class="ou-item__image-wrapper">
+                <img
+                  src="images/labels/openucla-label_acmi.svg"
+                  alt="Label - OpenUCLA Affordable Course Materials Initiative"
+                  class="ou-item__image"
+                />
+              </div>
               <p class="ou-item__text">
-                Over 10,000 images from the UCLA University Archives Photographic Reference collection, available to
-                download and use with citation.
+                Two UCLA faculty members will receive grants of $5,000 each to develop and release their proposals for
+                Open Educational Resources.
               </p>
-              <a href="" class="ou-item__link">View the Photographic Archives</a>
+              <a
+                href="https://www.library.ucla.edu/openucla/openucla-affordable-course-materials-initiative-award"
+                target="_blank"
+                class="ou-item__link"
+                >Learn More about the ACMI Awards</a
+              >
             </div>
-            <!-- Portal Item -->
+
             <div class="ou-item__wrapper">
-              <div
-                class="ou-item__header ou-item__header--oa-portals"
-                role="img"
-                aria-label="Label for Picturing UCLA: The Visual History of UCLA"
-              ></div>
+              <div class="ou-item__image-wrapper">
+                <img
+                  src="images/labels/openucla-label_kaleidoscope.svg"
+                  alt="Label - Kaleidoscope"
+                  class="ou-item__image"
+                />
+              </div>
               <p class="ou-item__text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam.
+                A collaboration between the Kaleidoscope Chamber Orchestra and the UCLA Music Library to empower
+                composers by making their work more accessible.
               </p>
-              <a href="" class="ou-item__link">Descriptive Portal Link</a>
+              <a
+                href="https://www.library.ucla.edu/news/ucla-library-kaleidoscope-announce-open-access-collaboration-empower-composers"
+                target="_blank"
+                class="ou-item__link"
+                >Learn More about Kaleidoscope</a
+              >
             </div>
-            <!-- Portal Item -->
+
             <div class="ou-item__wrapper">
-              <div
-                class="ou-item__header ou-item__header--oa-portals"
-                role="img"
-                aria-label="Label for Picturing UCLA: The Visual History of UCLA"
-              ></div>
+              <div class="ou-item__image-wrapper">
+                <img
+                  src="images/labels/openucla-label_ringing-the-way.svg"
+                  alt="Label - Ringing the Way"
+                  class="ou-item__image"
+                />
+              </div>
               <p class="ou-item__text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore.
+                Throughout UCLA's Centennial Celebration year, original works by Bruin musicians are playing on the
+                Powell Library Bells, culminating with a student competition.
               </p>
-              <a href="" class="ou-item__link">Descriptive Portal Link</a>
+              <a href="https://www.library.ucla.edu/rtw" target="_blank" class="ou-item__link"
+                >Listen to Ringing the Way Compilations</a
+              >
             </div>
-            <!-- Portal Item -->
+
             <div class="ou-item__wrapper">
-              <div
-                class="ou-item__header ou-item__header--oa-portals"
-                role="img"
-                aria-label="Label for Picturing UCLA: The Visual History of UCLA"
-              ></div>
+              <div class="ou-item__image-wrapper">
+                <img
+                  src="images/labels/openucla-label_impact-stories.svg"
+                  alt="Label - Open Sourced: Bruins Share Their OpenUCLA Impact Stories"
+                  class="ou-item__image"
+                />
+              </div>
               <p class="ou-item__text">
-                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                Excepteur sint occaecat cupidatat non proident.
+                The UCLA Library is an open access advocate for all Bruins. Hear personal impact stories from students,
+                faculty, staff and an alumni community partner.
               </p>
-              <a href="" class="ou-item__link">Descriptive Portal Link</a>
-            </div>
-            <!-- Portal Item -->
-            <div class="ou-item__wrapper">
-              <div
-                class="ou-item__header ou-item__header--oa-portals"
-                role="img"
-                aria-label="Label for Picturing UCLA: The Visual History of UCLA"
-              ></div>
-              <p class="ou-item__text">
-                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-              </p>
-              <a href="" class="ou-item__link">Descriptive Portal Link</a>
-            </div>
-            <!-- Portal Item -->
-            <div class="ou-item__wrapper">
-              <div
-                class="ou-item__header ou-item__header--oa-portals"
-                role="img"
-                aria-label="Label for Picturing UCLA: The Visual History of UCLA"
-              ></div>
-              <p class="ou-item__text">
-                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-                laborum.
-              </p>
-              <a href="" class="ou-item__link">Descriptive Portal Link</a>
+              <a href="" class="ou-item__link">Hear OpenUCLA Impact Stories</a>
             </div>
           </div>
         </section>
 
         <!-- NEWS & UPDATES -->
-        <section class="ou-news" id="news" role="heading" aria-level="2">
+        <section class="ou-section" id="news" role="heading" aria-level="2">
           <h2 class="ou-subheading">News & Updates</h2>
-          <div class="ou-inner-container ou-news-container">
-            <a href="" class="ou-news__link">UC Office of Scholarly Communications - Elsevier Updates</a>
-            <a href="" class="ou-news__link"
-              >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua</a
+          <p class="ou-lead ou-lead--news">
+            Link to the latest University of California news and updates regarding open access publishing of UC
+            research, transformative open access agreements, and affordable subscription costs, among other open access
+            topics.
+          </p>
+          <div class="ou-flex-container ou-flex-container--news">
+            <a
+              href="https://osc.universityofcalifornia.edu/uc-publisher-relationships/uc-and-elsevier/"
+              target="_blank"
+              rel="noopener"
+              class="ou-news__link"
+              >UC Office of Scholarly Communications - Elsevier Updates</a
             >
-            <a href="" class="ou-news__link">Duis aute irure dolor in reprehenderit in</a>
-            <a href="" class="ou-news__link"
-              >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</a
+            <a
+              href="https://osc.universityofcalifornia.edu/uc-publisher-relationships/plos-oa-agreement"
+              target="_blank"
+              rel="noopener"
+              class="ou-news__link"
+              >PloS and the UC Announce Open Access Publishing Agreement</a
             >
-            <a href="" class="ou-news__link"
-              >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</a
-            >
+            <a
+              href="https://osc.universityofcalifornia.edu/uc-publisher-relationships/uc-and-elsevier/alternative-access-to-articles/"
+              target="_blank"
+              rel="noopener"
+              class="ou-news__link"
+              >UC Office of Scholarly Communications - Accessing Elsevier Articles
+            </a>
+
             <a href="/news.html" class="ou-news__link ou-news__link--more">More Open Access News & Updates</a>
           </div>
         </section>
 
         <!-- MEDIA EXPERTS -->
-        <section class="ou-media-bio" id="media" role="heading" aria-level="2">
-          <h2 class="ou-subheading">Media Experts</h2>
-          <div class="ou-inner-container ou-media-bio-container">
-            <!-- Media Expert Card-->
+        <section class="ou-section" id="media" role="heading" aria-level="2">
+          <h2 class="ou-subheading">Media Experts Guide</h2>
+          <p class="ou-lead ou-lead--experts">
+            As a leading advocate for open access, UCLA librarians may be made available for news media interviews by
+            arrangement when timing permits. Areas of specialty include national and state level public access policies
+            and legislation, copyright, music copyright, and fair use. For further assistance, please contact
+            <span>Ariane Bicho, Director of Library Communications,</span> at <span>abicho@library.ucla.edu</span>.
+          </p>
+          <div class="ou-flex-container ou-flex-container--experts">
             <a href="https://www.library.ucla.edu/staff/virginia-steel" target="_blank" class="bio-card-wrapper">
               <div class="bio-img-wrapper">
-                <img src="images/experts/ginny-steel.jpg" alt="" class="bio-img" />
+                <img src="images/experts/ginny-steel.jpg" alt="Virginia Steel" class="bio-img" />
               </div>
               <div class="bio-text-wrapper">
                 <p class="bio-name">Virginia Steel</p>
                 <p class="bio-title">Norman and Armena Powell University Librarian</p>
+                <p class="bio-desc">
+                  Areas of Expertise: open access national and state level public access policies and legislation
+                </p>
               </div>
             </a>
-            <!-- Media Expert Card-->
+
             <a href="https://www.library.ucla.edu/staff/alison-scott" target="_blank" class="bio-card-wrapper">
               <div class="bio-img-wrapper">
-                <img src="images/experts/alison-scott.jpg" alt="" class="bio-img" />
+                <img src="images/experts/alison-scott.jpg" alt="Alison Scott" class="bio-img" />
               </div>
               <div class="bio-text-wrapper">
                 <p class="bio-name">Alison Scott</p>
                 <p class="bio-title">Associate University Librarian for Collections and Scholarly Communication</p>
+                <p class="bio-desc">
+                  Areas of Expertise: scholarly publishing, open access, transformative agreements, licensing
+                </p>
               </div>
             </a>
-            <!-- Media Expert Card-->
+
             <a href="" target="_blank" class="bio-card-wrapper">
               <div class="bio-img-wrapper">
-                <img src="https://via.placeholder.com/400x450" alt="" class="bio-img" />
+                <img
+                  src="images/logos/dgsom-logo.png"
+                  alt="David Geffen School of Medicine logo - Placeholder for Mimi
+                Tarn image"
+                  class="bio-img"
+                />
               </div>
               <div class="bio-text-wrapper">
                 <p class="bio-name">Mimi Tarn</p>
                 <p class="bio-title">Associate Professor, Family Medicine, David Geffen School of Medicine</p>
+                <p class="bio-desc">
+                  Dr. Tarn represents UCLA on UCOLASC, a standing committee of the UC Academic Senate, and can speak to
+                  UC system-wide open access policies and issues.
+                </p>
               </div>
             </a>
-            <!-- Media Expert Label-->
+
             <a href="https://www.library.ucla.edu/staff/martin-j-brennan" target="_blank" class="bio-label-wrapper">
               <div class="bio-label-text-wrapper">
                 <p class="bio-name">Marty Brennan</p>
                 <p class="bio-title">Scholarly Communication Education Librarian</p>
+                <p class="bio-desc">
+                  Areas of Expertise: open access, copyright, fair use, author rights
+                </p>
               </div>
             </a>
-            <!-- Media Expert Label -->
+
             <a href="https://www.library.ucla.edu/staff/jennifer-chan" target="_blank" class="bio-label-wrapper">
               <div class="bio-label-text-wrapper">
                 <p class="bio-name">Jennifer Chan</p>
                 <p class="bio-title">Scholarly Communication Librarian</p>
+                <p class="bio-desc">
+                  Areas of Expertise: open access, copyright, fair use, affordable course materials
+                </p>
               </div>
             </a>
-            <!-- Media Expert Label -->
+
             <a href="https://www.library.ucla.edu/staff/matthew-vest" target="_blank" class="bio-label-wrapper">
               <div class="bio-label-text-wrapper">
                 <p class="bio-name">Matthew Vest</p>
                 <p class="bio-title">Music Inquiry and Research Librarian</p>
+                <p class="bio-desc">
+                  Areas of Expertise: music copyright, open access compositions
+                </p>
               </div>
             </a>
           </div>
@@ -368,7 +451,7 @@
     </div>
 
     <footer class="ou-footer-wrapper__primary">
-      <div class="ou-container">
+      <div class="ou-body-container">
         <div class="ou-footer__primary">
           <a href="https://www.library.ucla.edu/"
             ><img src="/images/logos/ucla-library-logo-wht_resized.svg" alt="UCLA Library Logo" class="ou-footer__logo"
@@ -398,7 +481,7 @@
     </footer>
 
     <footer class="ou-footer-wrapper__secondary">
-      <div class="ou-container">
+      <div class="ou-body-container">
         &copy; 2014–2020 UC Regents, Creative Commons Attribution 4.0
       </div>
     </footer>

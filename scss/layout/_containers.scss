@@ -1,0 +1,56 @@
+/* ******** Layout ********/
+
+.ou-body-container {
+  margin: 0 auto;
+  width: calc(100vw - 40px);
+  max-width: 1920px;
+  &--white {
+    background: $white;
+  }
+}
+
+@media (min-width: 768px) {
+  .ou-body-container {
+    width: calc(100vw - 60px);
+  }
+}
+
+@media (min-width: 992px) {
+  .ou-body-container {
+    width: calc(100vw - 80px);
+  }
+}
+
+.ou-main-container {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  @media (min-width: 992px) {
+    margin-bottom: 6rem;
+    &--home {
+      margin-top: 7rem;
+    }
+  }
+}
+
+.ou-section {
+  margin-bottom: 5rem;
+}
+
+@media (min-width: 992px) {
+  .ou-section {
+    margin-bottom: 8rem;
+    &--intro {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
+
+.ou-flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  &--news,
+  &--experts {
+    justify-content: space-between;
+  }
+}

@@ -1,6 +1,5 @@
-@import "variables";
+/* ******** HEADER ********/
 
-/********* HEADER ********/
 .ou-header {
   background-size: cover;
   background-repeat: no-repeat;
@@ -15,8 +14,8 @@
     background-position: left;
   }
   &--news {
-    background-image: url("/images/headers/openucla-news-header-img.jpg");
-    background-position: center;
+    background-image: url("/images/headers/openucla-news-header-img2.jpg");
+    background-position: left;
   }
   &--events {
     background-image: url("/images/headers/openucla-events-header-img.jpg");
