@@ -167,6 +167,9 @@ body {
   100% {
     opacity: 1;
     transform: translateX(0); } }
+@media (min-width: 899px) {
+  .nav-active {
+    flex-direction: row; } }
 /* ******** HEADER ********/
 .ou-header {
   background-size: cover;
