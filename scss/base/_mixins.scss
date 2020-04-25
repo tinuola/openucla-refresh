@@ -1,0 +1,8 @@
+@mixin plain-link {
+  color: $text-black;
+  text-decoration: none;
+
+  &:visited {
+    color: $text-black;
+  }
+}

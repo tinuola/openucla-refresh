@@ -7,7 +7,6 @@
 @media (min-width: 992px) {
   .ou-intro__wrapper--lead {
     flex: 0 0 55%;
-    align-self: center;
     order: 2;
     padding: 0 4rem 0 2rem;
   }
@@ -15,24 +14,24 @@
 
 .ou-intro__lead--text {
   font-size: 1.125rem;
-  line-height: 1.5;
+  line-height: 1.7;
 }
 
 @media (min-width: 375px) {
   .ou-intro__lead--text {
-    font-size: 1.25rem;
+    font-size: 1.35rem;
   }
 }
 
 @media (min-width: 768px) {
   .ou-intro__lead--text {
-    font-size: 1.5rem;
+    font-size: 1.75rem;
   }
 }
 
 @media (min-width: 1200px) {
   .ou-intro__lead--text {
-    font-size: 1.75rem;
+    font-size: 1.85rem;
   }
 }
 
@@ -120,8 +119,8 @@
   position: relative;
   padding-bottom: 1.25rem;
   &::before {
-    content: "";
-    background-image: url("/images/branding/ucla-blue-ylw-molecule.svg");
+    content: '';
+    background-image: url('../images/branding/ucla-blue-ylw-molecule.svg');
     background-size: contain;
     background-repeat: no-repeat;
     height: 40px;
