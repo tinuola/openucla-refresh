@@ -24,7 +24,7 @@ ul {
 /* ******** Typography ********/
 body {
   color: #333333;
-  font-family: "Helvetica"; }
+  font-family: 'Helvetica'; }
 
 .ou-subheading {
   color: #005587;
@@ -85,9 +85,14 @@ body {
       color: #ffffff;
       border-bottom: solid 2px #ffffff; }
 
+.header-image-citation {
+  font-size: 14px;
+  font-style: italic; }
+
 /* ******** NAV ********/
 .ou-nav {
   display: flex;
+  position: relative;
   justify-content: space-between;
   align-items: flex-end;
   min-height: 7vh;
@@ -177,16 +182,16 @@ body {
   height: 500px;
   position: relative; }
   .ou-header--main {
-    background-image: url("/images/headers/openucla-ucla-library-royce-hall-book-projection.jpg");
+    background-image: url("../images/headers/openucla-ucla-library-royce-hall-book-projection.jpg");
     background-position: center center; }
   .ou-header--faqs {
-    background-image: url("/images/headers/openucla-faqs-header-img.jpg");
+    background-image: url("../images/headers/openucla-faqs-header-img.jpg");
     background-position: left; }
   .ou-header--news {
-    background-image: url("/images/headers/openucla-news-header-img2.jpg");
+    background-image: url("../images/headers/openucla-news-header-img2.jpg");
     background-position: left; }
   .ou-header--events {
-    background-image: url("/images/headers/openucla-events-header-img.jpg");
+    background-image: url("../images/headers/openucla-events-header-img.jpg");
     background-position: right; }
 
 .ou-header-label {
@@ -279,13 +284,18 @@ body {
 @media (min-width: 768px) {
   .ou-subpage-item {
     padding: 2.5rem 3.75rem; }
-    .ou-subpage-item--heading {
-      font-size: 1.5rem; }
     .ou-subpage-item--text {
       font-size: 1.125rem; } }
 .ou-subpage-event-wrapper {
   flex: 0 0 100%;
-  margin-bottom: 2rem; }
+  border: 1px solid rgba(195, 215, 238, 0.7);
+  margin-bottom: 2rem;
+  padding: 1rem; }
+  .ou-subpage-event-wrapper a {
+    color: #333333;
+    text-decoration: none; }
+    .ou-subpage-event-wrapper a:visited {
+      color: #333333; }
 
 @media (min-width: 600px) {
   .ou-subpage-event-wrapper {
@@ -326,22 +336,21 @@ body {
 @media (min-width: 992px) {
   .ou-intro__wrapper--lead {
     flex: 0 0 55%;
-    align-self: center;
     order: 2;
     padding: 0 4rem 0 2rem; } }
 .ou-intro__lead--text {
   font-size: 1.125rem;
-  line-height: 1.5; }
+  line-height: 1.7; }
 
 @media (min-width: 375px) {
   .ou-intro__lead--text {
-    font-size: 1.25rem; } }
+    font-size: 1.35rem; } }
 @media (min-width: 768px) {
   .ou-intro__lead--text {
-    font-size: 1.5rem; } }
+    font-size: 1.75rem; } }
 @media (min-width: 1200px) {
   .ou-intro__lead--text {
-    font-size: 1.75rem; } }
+    font-size: 1.85rem; } }
 .ou-intro__lead--link {
   color: #005587;
   display: inline-block;
@@ -401,8 +410,8 @@ body {
   position: relative;
   padding-bottom: 1.25rem; }
   .ou-intro__list--item::before {
-    content: "";
-    background-image: url("/images/branding/ucla-blue-ylw-molecule.svg");
+    content: '';
+    background-image: url("../images/branding/ucla-blue-ylw-molecule.svg");
     background-size: contain;
     background-repeat: no-repeat;
     height: 40px;
@@ -476,10 +485,27 @@ body {
   .ou-item__wrapper--event:nth-last-child(1) {
     align-self: center;
     border-bottom: 0; }
+  .ou-item__wrapper--event .ou-event__placeholder {
+    line-height: 1.7; }
+  .ou-item__wrapper--event a {
+    color: #333333;
+    text-decoration: none; }
+    .ou-item__wrapper--event a:visited {
+      color: #333333; }
+    .ou-item__wrapper--event a.ou-event__past--link {
+      color: #333333;
+      font-size: 0.875rem;
+      font-weight: 600;
+      letter-spacing: 1px;
+      text-decoration: underline; }
+      .ou-item__wrapper--event a.ou-event__past--link:hover {
+        color: #003b5c; }
 
 @media (min-width: 576px) {
   .ou-item__wrapper--event {
-    flex: 0 0 100%; } }
+    flex: 0 0 100%; }
+    .ou-item__wrapper--event:nth-child(even) {
+      margin-left: 0; } }
 @media (min-width: 768px) {
   .ou-item__wrapper--event {
     flex: 0 0 48%;
@@ -529,15 +555,6 @@ body {
 @media (min-width: 768px) {
   .ou-event__desc {
     font-size: 1rem; } }
-.ou-event__past--link {
-  color: #333333;
-  font-size: 0.875rem;
-  font-weight: 600;
-  letter-spacing: 1px;
-  text-decoration: underline; }
-  .ou-event__past--link:hover {
-    color: #003b5c; }
-
 @media (min-width: 992px) {
   .ou-event__past {
     padding-left: 1.25rem; } }
@@ -604,11 +621,8 @@ body {
     font-size: 1rem; } }
 /* ******** NEWS & UPDATES *********/
 .ou-news__link {
-  color: #333333;
   flex: 0 0 100%;
-  font-size: 1rem;
   line-height: 1.25;
-  text-decoration: none;
   border-bottom: 1px solid #c3d7ee;
   padding: 1rem 0;
   margin-bottom: 2rem; }
@@ -688,3 +702,10 @@ footer {
   background: #003b5c;
   padding-top: 1rem;
   padding-bottom: 1rem; }
+
+.element-invisible {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  overflow: hidden;
+  height: 1px; }

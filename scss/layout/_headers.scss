@@ -6,19 +6,19 @@
   height: 500px;
   position: relative;
   &--main {
-    background-image: url("/images/headers/openucla-ucla-library-royce-hall-book-projection.jpg");
+    background-image: url('../images/headers/openucla-ucla-library-royce-hall-book-projection.jpg');
     background-position: center center;
   }
   &--faqs {
-    background-image: url("/images/headers/openucla-faqs-header-img.jpg");
+    background-image: url('../images/headers/openucla-faqs-header-img.jpg');
     background-position: left;
   }
   &--news {
-    background-image: url("/images/headers/openucla-news-header-img2.jpg");
+    background-image: url('../images/headers/openucla-news-header-img2.jpg');
     background-position: left;
   }
   &--events {
-    background-image: url("/images/headers/openucla-events-header-img.jpg");
+    background-image: url('../images/headers/openucla-events-header-img.jpg');
     background-position: right;
   }
 }
